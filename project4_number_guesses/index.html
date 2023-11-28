@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessses Game</title>
+    <style>
+        body{
+            background-color:rgb(132, 128, 128);
+            width:300;
+            max-width:500;
+            margin: 0 auto;
+        }
+        .lastResult{
+            color:white;
+            padding:7px;
+        }
+        .guesses{
+            color:white;
+            padding:7px;
+        }
+        button{
+            background-color: #c1414114;
+            color:white;
+            width: 250px;
+            height: 50px;
+            border-radius: 25px;
+            font-size: 25px;
+            border-style: none;
+            margin-top: 30px;
+        }
+        #subt{
+            background-color: rgb(131, 30, 233);
+            color:white;
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 20px;
+            border-style:none;
+            margin-top:50px;
+        }
+        #guessField {
+            color: #000;
+            width: 250px;
+            height: 50px;
+            font-size: 30px;
+            border-style: none;
+            margin-top: 25px;
+          
+            /* margin-left: 50px; */
+            border: 5px solid #6c6d6d;
+            text-align: center;
+          }
+          
+          #guess {
+            font-size: 55px;
+            /* margin-left: 90px; */
+            margin-top: 120px;
+            color: #fff;
+          }
+          
+          .guesses {
+            background-color: #7a7a7a;
+          }
+          
+          #wrapper {
+            box-sizing: border-box;
+            text-align: center;
+            width: 700px;
+            height: 660px;
+            background-color: #ab8383;
+            color: #fff;
+            font-size: 25px;
+          }
+          
+          h1 {
+            background-color: #161616;
+          
+            color: #fff;
+            text-align: center;
+          }
+          
+          p {
+            font-size: 16px;
+            text-align: center;
+          }
+          
+        
+    </style>
+</head>
+<body>
+<div id="wrapper" >
+    <h1> Number Guesses Game</h1>
+<p> Try and guess a random number between <span style="color:rgb(0, 255, 4)">1 to 100</span> </span></p>
+<p> You have <span style="color:rgb(17, 255, 0)">10</span> attempt to guess the right number.</p>
+<br>
+    <form class="from">
+        <label for="guessField" id="guess">Guess a number</label>
+        <input type="text" id="guessField" class="guessField">
+        <input type="submit" id="subt" vlaue="Submit guess" class=guessSubmit">
+    </form>
+
+    <div class="resultParas">
+        <p> Previous Guesses: <span class="guesses"></span></p>
+        <p> Guesses remaining: <span class="lastResult">10</span></p>
+        <p class="lowOrHi"></p>
+    </div>
+</div>
+
+<script src="javascript.js"></script>
+    
+</body>
+</html>
