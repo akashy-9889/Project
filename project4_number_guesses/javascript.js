@@ -50,33 +50,33 @@ function checkGuess(guess) {
   }
 
    else if (  randomNumber <= 50 && randomNumber > 40) {
-      displayMessage(`Number is 50 or less than 50 but greater than 40`)
+      displayMessage(`from 41 to 50`)
     }
    else if ( randomNumber <= 40 && randomNumber > 30) {
-      displayMessage(`Number is 40 or less than 40 but greater than 30`)
+      displayMessage(`from 31 to 40`)
     }
     else if ( randomNumber <= 30 && randomNumber > 20) {
-      displayMessage(`Number is 30 or less than 30 but greater than 20`)
+      displayMessage(`from 21 to 30`)
     }
     else if ( randomNumber <= 20 && randomNumber >=10) {
-      displayMessage(`Number is 20 or less than 10 but greater than 00`);
+      displayMessage(`11 to 20`);
     }
     else if ( randomNumber <= 10 && randomNumber >= 1) {
-      displayMessage(`Number is 10 or less than 10 but greater than 00`);
+      displayMessage(`from 1 to 10`);
     }
    else if ( randomNumber >= 51 && randomNumber <60) {
-    displayMessage(`Number is greater than 50 but less than 60`)}
+    displayMessage(`from 51 to 59`)}
    else if ( randomNumber >= 60 && randomNumber <= 69) {
-      displayMessage(`Number is 60 or  greater than 60 but less than 70`)
+      displayMessage(`from 60 to 69`)
     }
     else if ( randomNumber >= 70 && randomNumber <= 79) {
-      displayMessage(`Number is 70 or greater than 70 but less than 80`)
+      displayMessage(`from 70 to 79`)
     }
     else if ( randomNumber >= 80 && randomNumber <= 89) {
-      displayMessage(`Number is 80 or  greater than 80 but less than 90`)
+      displayMessage(`from 80 to 89`)
     }
     else if ( randomNumber >= 90 && randomNumber <= 100) {
-      displayMessage(`Number is 90 or greater than 90 but less than 100`)
+      displayMessage(`from 90 to 100`)
     }
   }
 
