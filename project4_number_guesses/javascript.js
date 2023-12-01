@@ -49,35 +49,12 @@ function checkGuess(guess) {
     endGame();
   }
 
-   else if (  randomNumber <= 50 && randomNumber > 40) {
-      displayMessage(`from 41 to 50`)
-    }
-   else if ( randomNumber <= 40 && randomNumber > 30) {
-      displayMessage(`from 31 to 40`)
-    }
-    else if ( randomNumber <= 30 && randomNumber > 20) {
-      displayMessage(`from 21 to 30`)
-    }
-    else if ( randomNumber <= 20 && randomNumber >=10) {
-      displayMessage(`11 to 20`);
-    }
-    else if ( randomNumber <= 10 && randomNumber >= 1) {
-      displayMessage(`from 1 to 10`);
-    }
-   else if ( randomNumber >= 51 && randomNumber <60) {
-    displayMessage(`from 51 to 59`)}
-   else if ( randomNumber >= 60 && randomNumber <= 69) {
-      displayMessage(`from 60 to 69`)
-    }
-    else if ( randomNumber >= 70 && randomNumber <= 79) {
-      displayMessage(`from 70 to 79`)
-    }
-    else if ( randomNumber >= 80 && randomNumber <= 89) {
-      displayMessage(`from 80 to 89`)
-    }
-    else if ( randomNumber >= 90 && randomNumber <= 100) {
-      displayMessage(`from 90 to 100`)
-    }
+   else if(guess>randomNumber){
+    displayMessage(`Number is Too high`)
+   }
+   else if(guess<random){
+    displayGuess(`Number is Too low`)
+   }
   }
 
 
