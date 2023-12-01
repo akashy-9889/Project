@@ -50,10 +50,10 @@ function checkGuess(guess) {
   }
 
    else if(guess>randomNumber){
-    displayMessage(`Number is Too high`)
+    displayMessage(`Number is Too low`)
    }
    else if(guess<random){
-    displayGuess(`Number is Too low`)
+    displayGuess(`Number is Too high`)
    }
   }
 
