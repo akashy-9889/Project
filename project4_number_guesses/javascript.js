@@ -47,9 +47,9 @@ function checkGuess(guess) {
   if (guess === randomNumber) {
     displayMessage(`You guessed it right`);
     endGame();
-  }else if(guess>randomNumber){
+  }else if(guess<randomNumber){
     displayMessage(`choose a lower number.`)
-   }else if(guess<random){
+   }else if(guess>randomNumber){
     displayGuess(`choose a higher number.`)
    }
   }
